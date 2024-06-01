@@ -19,32 +19,21 @@ export default function functionNavbarComponent() {
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
+                    <Link href="/nosotros" className={`${pathname === '/nosotros' ? 'text-blue-600' : ''}`}>
+                        Nosotros
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
                     <Link href="/servicios" className={`${pathname === '/servicios' ? 'text-blue-600' : ''}`}>
                         <p>Servicios</p>
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
-                    <Link href="/proyectos" className={`${pathname === '/proyectos' ? 'text-blue-600' : ''}`}>
-                        Proyectos
-                    </Link>
-                </NavbarItem>
                 <NavbarItem >
-                    <Link href="/clientes" className={`${pathname === '/clientes' ? 'text-blue-600' : ''}`}>
-                        Clientes
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link href="/blog" className={`${pathname === '/blog' ? 'text-blue-600' : ''}`}>
-                        Blog
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
                     <Link href="/contacto" className={`${pathname === '/contacto' ? 'text-blue-600' : ''}`}>
                         Contacto
                     </Link>
                 </NavbarItem>
             </NavbarContent>
-
         </Navbar>
     )
 }
